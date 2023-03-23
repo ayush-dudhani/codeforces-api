@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:aliceblue;
+}
+#my-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% auto 0 auto;
+}
+#my-form button{
+    color: rgb(247, 240, 240);
+    height: 36px;
+    background-color: blue;
+    cursor: pointer;
+    width: 10%;
+    outline: none;
+    border: none;
+    margin-left: 1rem;
+    border-radius: 5px;
+}
+#my-form input[type="text"]{
+    height: 30px;
+    font-size: 20px;
+    padding-left: 5px;
+    outline: 2px solid blue;
+    border: 1px solid blue;
+    border-radius: 2px;
+}
+#codeforces-logo{
+    display: flex;
+    margin: 5% auto 0 auto;
+}

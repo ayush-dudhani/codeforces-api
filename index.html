@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform Rating</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <img src="codeforces.png" id="codeforces-logo" alt="CODEFORCES LOGO" height="100" width="400">
+    <form id="my-form">
+        
+        <input type="text" id="username" placeholder="enter username" name="username">
+
+        <button type="submit">Search</button>
+    </form>
+    <div id="result-list">
+
+    </div>
+    
+    <script>
+        const form = document.getElementById("my-form");
+
+        form.addEventListener("submit", function(e){
+            e.preventDefault();
+
+            const formData = new FormData(form);
+            const username = formData.get('username');
+            const resultList = document.getElementById('result-list');
+            resultList.innerHTML =`<code-forces data=${username}></code-forces>`;
+            
+
+        });
+    
+    </script>
+    
+    <script type="module">
+        import { codeForces } from './codeForces.js';
+    </script>
+
+</body>
+
+</html>
